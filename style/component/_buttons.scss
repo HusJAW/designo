@@ -1,0 +1,39 @@
+a.button {
+  margin: auto;
+  text-transform: uppercase;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  &.primery {
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+  }
+  &.secoundery {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+  &.submit-form {
+    padding-left: 4.75rem;
+    padding-right: 4.75rem;
+  }
+  &.contact {
+    padding-left: 1.85rem;
+    padding-right: 1.85rem;
+  }
+  &.light {
+    background: var(--peach);
+    color: var(--white);
+  }
+  &.dark {
+    background: var(--white);
+    color: var(--black);
+  }
+  &:hover {
+    background: var(--light-peach);
+    color: var(--white);
+  }
+}

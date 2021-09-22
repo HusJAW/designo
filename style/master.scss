@@ -1,0 +1,16 @@
+//----------BASE----------
+@use "./base/page-reset";
+@use "./base/typography";
+@use "./base/variables";
+@use "./base/globel";
+
+//----------HELPER----------
+@use "./helper/helperClasses";
+@use "./helper/mixins";
+
+//----------COMPONENTS----------
+@use "./component/buttons";
+@use "./component/footer";
+@use "./component/nav-bar";
+
+//----------PAGES----------
