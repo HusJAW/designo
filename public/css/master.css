@@ -150,21 +150,21 @@ body {
 }
 
 main {
-  background-color: #ffffff;
+  background: #ffffff;
   margin: auto;
   max-width: 1440px;
 }
 
 a.button {
-  margin: auto;
   text-transform: uppercase;
   border-radius: 0.7rem;
   font-weight: 500;
-  line-height: 2.2rem;
   text-decoration: none;
   cursor: pointer;
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 a.button.primery {
   padding-left: 1.7rem;
@@ -195,16 +195,195 @@ a.button:hover {
   color: var(--white);
 }
 
-footer.footer-banner {
+footer {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+section.footer-banner {
   display: grid;
   grid-template-columns: 2.5rem 1fr 2.5rem;
   grid-template-rows: 19rem 18.9rem;
+  max-width: 111.1rem;
 }
-footer.footer-banner .footer-banner-content {
+@media screen and (min-width: 768px) {
+  section.footer-banner {
+    grid-template-columns: 3.9rem 1fr 3.9rem;
+    grid-template-rows: 26.4rem 8.6rem;
+  }
+}
+@media screen and (min-width: 1111px) {
+  section.footer-banner {
+    grid-template-columns: minmax(auto, 16.5rem) minmax(1fr, 111.1rem) minmax(auto, 16.5rem);
+    grid-template-rows: 22rem 7.2rem;
+    margin: 0 auto;
+  }
+}
+section.footer-banner .footer-banner-content {
   grid-column: 2/3;
   grid-row: 1/3;
   background: var(--peach);
   color: var(--white);
+  border-radius: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6.4rem 2.8rem;
+}
+@media screen and (min-width: 768px) {
+  section.footer-banner .footer-banner-content {
+    padding: 5.7rem 5.85rem;
+  }
+}
+@media screen and (min-width: 1111px) {
+  section.footer-banner .footer-banner-content {
+    padding: 7.4rem 9.6rem;
+    flex-direction: row;
+  }
+}
+section.footer-banner .footer-banner-content .footer-banner-info-container {
+  text-align: center;
+  max-width: 45.9rem;
+}
+section.footer-banner .footer-banner-content .footer-banner-info-container h2 {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1111px) {
+  section.footer-banner .footer-banner-content .footer-banner-info-container h2 {
+    text-align: start;
+  }
+}
+section.footer-banner .footer-banner-content .footer-banner-info-container p {
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+@media screen and (min-width: 1111px) {
+  section.footer-banner .footer-banner-content .footer-banner-info-container p {
+    text-align: start;
+  }
+}
+section.footer-banner .footer-banner-overlay {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  background: var(--black);
+  z-index: -1;
+}
+
+.footer-content {
+  background: var(--black);
+  margin: 0 auto;
+  padding: 6.4rem 2.4rem;
+  max-width: 111.1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer-content {
+    padding: 8rem 3.9rem;
+  }
+}
+@media screen and (min-width: 1111px) {
+  .footer-content {
+    padding: 16.5rem 7.2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-content .footer-navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4.8rem;
+    border-bottom: var(--light-grey) 0.01rem solid;
+  }
+}
+.footer-content .footer-navigation-container .footer-logo-container {
+  border-bottom: var(--light-grey) 0.01rem solid;
+  padding-bottom: 3.2rem;
+  display: grid;
+  place-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-content .footer-navigation-container .footer-logo-container {
+    padding-bottom: 0;
+    border-bottom: none;
+    display: block;
+  }
+}
+.footer-content .footer-navigation-container .footer-logo-container img {
+  width: 20.2rem;
+  height: 2.7rem;
+}
+.footer-content .footer-navigation-container .navgation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-content .footer-navigation-container .navgation a {
+  text-decoration: none;
+  margin-top: 3.4rem;
+  font-size: 1.4rem;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+.footer-content .footer-navigation-container .navgation a:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .footer-content .footer-navigation-container .navgation a {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-content .footer-navigation-container .navgation {
+    flex-direction: row;
+    width: 37rem;
+    justify-content: space-between;
+  }
+}
+.footer-content .contact-us-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4.7rem;
+  height: 25.3rem;
+}
+@media screen and (min-width: 768px) {
+  .footer-content .contact-us-footer {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 3.8rem;
+    height: 10.7rem;
+  }
+}
+.footer-content .contact-us-footer .contact-info {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--white);
+  opacity: 0.5;
+}
+.footer-content .contact-us-footer .contact-info h3 {
+  font-weight: bold;
+}
+.footer-content .contact-us-footer .social-media-connect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18.4rem;
+}
+.footer-content .contact-us-footer .social-media-connect a {
+  text-decoration: none;
+}
+.footer-content .contact-us-footer .social-media-connect a svg {
+  fill: var(--peach);
+}
+.footer-content .contact-us-footer .social-media-connect a svg :hover {
+  fill: var(--light-peach);
 }
 
 .nav-bar-header {
@@ -298,6 +477,9 @@ footer.footer-banner .footer-banner-content {
 .nav-bar-header .page-navigation a:nth-child(1), .nav-bar-header .page-navigation a:nth-child(2) {
   margin-bottom: 3.2rem;
 }
+.nav-bar-header .page-navigation a:hover {
+  text-decoration: underline;
+}
 @media screen and (min-width: 768px) {
   .nav-bar-header .page-navigation a {
     color: var(--black);
@@ -314,8 +496,8 @@ footer.footer-banner .footer-banner-content {
   position: fixed;
   position: absolute;
   top: 0px;
-  width: 100%;
-  height: calc(100vh - 3.5rem);
+  width: calc(100vh - 18.2rem);
+  height: calc(100vh - 6.3rem);
   left: 0%;
   z-index: -1;
   background: var(--dark-grey);

@@ -66,6 +66,7 @@
     transform: scale(0, 0);
     transform-origin: top;
     transition: 250ms ease-in-out;
+
     @include breakpoint(tablet) {
       transform: scale(1, 1);
       background: none;
@@ -90,6 +91,9 @@
       &:nth-child(2) {
         margin-bottom: 3.2rem;
       }
+      &:hover {
+        text-decoration: underline;
+      }
       @include breakpoint(tablet) {
         color: var(--black);
         font-size: 1.4rem;
@@ -109,8 +113,8 @@
     position: fixed;
     position: absolute;
     top: 0px;
-    width: 100%;
-    height: calc(100vh - 3.5rem);
+    width: calc(100vh - 18.2rem); // needs fixing also checck HTML
+    height: calc(100vh - 6.3rem);
     left: 0%;
     z-index: -1;
     background: var(--dark-grey);
