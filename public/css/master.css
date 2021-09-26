@@ -287,7 +287,7 @@ section.footer-banner .footer-banner-overlay {
 }
 @media screen and (min-width: 1111px) {
   .footer-content {
-    padding: 16.5rem 7.2rem;
+    padding: 7.1rem 7.2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -296,11 +296,11 @@ section.footer-banner .footer-banner-overlay {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 4.8rem;
-    border-bottom: var(--light-grey) 0.01rem solid;
+    border-bottom: rgba(255, 255, 255, 0.1) 0.1rem solid;
   }
 }
 .footer-content .footer-navigation-container .footer-logo-container {
-  border-bottom: var(--light-grey) 0.01rem solid;
+  border-bottom: rgba(255, 255, 255, 0.1) 0.1rem solid;
   padding-bottom: 3.2rem;
   display: grid;
   place-items: center;
