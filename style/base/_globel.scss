@@ -1,13 +1,18 @@
+@use "../helper/mixins" as *;
+@use "../base/variables" as *;
+@use "../base/typography" as *;
+
 body {
   font-family: "Jost", sans-serif;
   background: var(--dark-grey);
+  min-width: 37.5rem;
+  display: grid;
+  grid-template-columns: 1fr minmax(32.7rem, 111.1rem) 1fr;
+  // grid-template-rows: repeat(auto-fill, 1fr);
 }
 main {
-  //   display: grid;
-  //   grid-template-columns: 1fr;
-  //   justify-content: center;
-  //   align-items: center;
   background: #ffffff;
-  margin: auto;
-  max-width: 1440px;
+  margin: 0 auto;
+  max-width: 144rem;
+  grid-column: 2/3;
 }

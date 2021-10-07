@@ -9,9 +9,11 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  grid-column: 2/3;
   @include breakpoint(tablet) {
-    margin: 6.4rem auto;
+    // margin: 6.4rem auto;
     position: static;
+    padding: 0 clamp(0.1rem, 0.2143rem + -0.1488vw, 0rem);
   }
 
   .logo-container {

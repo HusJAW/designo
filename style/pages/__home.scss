@@ -1,0 +1,176 @@
+@use "../helper/mixins" as *;
+@use "../base/variables" as *;
+
+//start of home hero card
+.home-hero-card {
+  width: clamp(37.5rem, 7.5382rem + 79.8982vw, 68.9rem);
+  height: 84.3rem;
+  background-color: var(--peach);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: clamp(12rem, 9.962rem + 5.4348vw, 16rem);
+  overflow: hidden;
+  border-radius: 1.4rem;
+
+  @include breakpoint(desktop) {
+    flex-direction: row;
+    width: 111.1rem;
+    height: 64rem;
+    position: relative;
+  }
+
+  &-img {
+    @include breakpoint(desktop) {
+      position: absolute;
+
+      left: 550px;
+      top: -30px;
+    }
+  }
+  &-info {
+    width: clamp(32.7rem, 20.166rem + 33.4239vw, 57.3rem);
+    height: clamp(31.2rem, 30.4867rem + 1.9022vw, 32.6rem);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: clamp(8rem, 9.019rem + -2.7174vw, 6rem);
+    @include breakpoint(desktop) {
+      margin-top: 0;
+      //   position: absolute;
+      width: 54rem;
+      align-items: flex-start;
+      padding-left: 9.6rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+      margin-bottom: 2.5rem;
+      @include breakpoint(desktop) {
+        text-align: left;
+      }
+    }
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      margin-bottom: 2.5rem;
+      @include breakpoint(desktop) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+//end of home hero card
+
+// start of virtue cards
+.virtue-cards {
+  padding: 12rem 2.4rem;
+  //   width: 32.7rem;
+  //   margin: 0 auto;
+  max-width: 111rem;
+  @include breakpoint(tablet) {
+    // width: 69rem;
+  }
+  @include breakpoint(desktop) {
+    padding: 16rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container {
+    display: grid;
+    place-items: center;
+    max-width: 32.7rem;
+
+    @include breakpoint(tablet) {
+      display: flex;
+      max-width: 68.9rem;
+    }
+    @include breakpoint(desktop) {
+      flex-direction: column;
+      max-width: 35rem;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 8.7rem;
+      @include breakpoint(tablet) {
+        margin-bottom: 3.2rem;
+      }
+      @include breakpoint(desktop) {
+        margin-bottom: 0rem;
+        // margin-right: 4.8rem;
+      }
+    }
+
+    &__img {
+      margin-bottom: 5.4rem;
+      @include breakpoint(tablet) {
+        margin-bottom: 0;
+        margin-right: 3rem;
+      }
+      @include breakpoint(desktop) {
+        margin-bottom: 4.8rem;
+        margin-right: 0rem;
+      }
+    }
+    &__info {
+      text-align: center;
+      @include breakpoint(tablet) {
+        text-align: left;
+      }
+      @include breakpoint(desktop) {
+        text-align: center;
+      }
+      h2 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        letter-spacing: 0.5rem;
+        margin-bottom: 4.4rem;
+        @include breakpoint(tablet) {
+          margin-bottom: 3rem;
+        }
+        @include breakpoint(desktop) {
+          margin-bottom: 3.2rem;
+        }
+      }
+      p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+      }
+    }
+  }
+}
+
+.virtue-cards__container:nth-child(1) {
+  .virtue-cards__container__img {
+    img {
+      background: url(/assets/home/desktop/bg-pattern-hero-home-passion.svg);
+      background-size: cover;
+    }
+  }
+}
+
+.virtue-cards__container:nth-child(2) {
+  .virtue-cards__container__img {
+    img {
+      background: url(/assets/home/desktop/bg-pattern-hero-home-RESOURCEFUL.svg);
+      background-size: cover;
+    }
+  }
+}
+.virtue-cards__container:nth-child(3) {
+  .virtue-cards__container__img {
+    img {
+      background: url(/assets/home/desktop/bg-pattern-hero-home.svg);
+      background-size: cover;
+    }
+  }
+}
+// end of virtue cards

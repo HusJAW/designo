@@ -9,8 +9,11 @@
 @use "./helper/mixins";
 
 //----------COMPONENTS----------
-@use "./component/buttons";
-@use "./component/footer";
 @use "./component/nav-bar";
+@use "./component/buttons";
+@use "./component/project-type-cards";
+@use "./component/location-cards";
+@use "./component/footer";
 
 //----------PAGES----------
+@use "./pages/_home";
