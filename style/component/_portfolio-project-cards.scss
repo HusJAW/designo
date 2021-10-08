@@ -1,0 +1,105 @@
+@use "../helper/mixins" as *;
+@use "../base/variables" as *;
+
+section.portfolio-project-cards {
+  display: grid;
+  grid-template-columns: 1fr 32.7rem 1fr;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  row-gap: 4rem;
+  margin-bottom: 9.6rem;
+
+  .portfolio-card {
+    grid-column: 2/3;
+    height: 47.8rem;
+
+    img {
+      width: 32.7rem;
+      height: 32rem;
+      border-radius: 1.4rem 1.4rem 0 0;
+    }
+  }
+  .portfolio-info {
+    text-align: center;
+    // background: var(--light-peach);
+    background: hsla(11, 100, 80, 0.19);
+    height: 15.8rem;
+    border-radius: 0 0 1.4rem 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background 250ms;
+
+    h2 {
+      font-size: 2rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.5rem;
+      color: var(--peach);
+      transition: color 250ms;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: var(--dark-grey);
+    }
+    &:hover {
+      background: var(--peach);
+      cursor: pointer;
+
+      h2 {
+        color: var(--white);
+      }
+      p {
+        color: var(--white);
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    grid-template-columns: 1fr 68.9rem 1fr;
+    row-gap: 3.2rem;
+    margin-bottom: 12rem;
+
+    .portfolio-card {
+      grid-column: 2/3;
+      display: grid;
+      grid-template-columns: 34.45rem 34.45rem;
+      height: 31rem;
+      img {
+        width: 34.45rem;
+        height: 31rem;
+        grid-column: 1/2;
+        border-radius: 1.4rem 0 0 1.4rem;
+      }
+      .portfolio-info {
+        grid-column: 2/3;
+        width: 34.45rem;
+        height: 31rem;
+        border-radius: 0 1.4rem 1.4rem 0;
+      }
+    }
+  }
+  @include breakpoint(desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3.2rem;
+    column-gap: 3rem;
+    .portfolio-card {
+      grid-column: unset;
+      grid-template-columns: 1fr;
+      height: 47.8rem;
+
+      img {
+        grid-column: unset;
+        width: 35rem;
+        height: 32rem;
+        border-radius: 1.4rem 1.4rem 0 0;
+      }
+      .portfolio-info {
+        grid-column: unset;
+        width: 35rem;
+        height: 15.9rem;
+        border-radius: 0 0 1.4rem 1.4rem;
+      }
+    }
+  }
+}

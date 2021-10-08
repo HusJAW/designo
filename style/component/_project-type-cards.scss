@@ -8,8 +8,15 @@
   //   grid-template-rows: repeat(autofill, 1fr);
   place-items: center;
   gap: 2.4rem;
+  &:not(.home) {
+    justify-content: space-between;
+    margin-bottom: 9.6rem;
+  }
   @include breakpoint(tablet) {
     // padding: 0rem 3.9rem;
+    &:not(.home) {
+      margin-bottom: 12rem;
+    }
   }
   @include breakpoint(desktop) {
     // padding: 16rem 16.5rem;
@@ -20,6 +27,9 @@
     // grid-template-columns: minmax(auto, 16.5rem) 1fr 1fr minmax(auto, 16.5rem);
     // grid-template-rows: repeat(2, 1fr);
     // place-items: center;
+    &:not(.home) {
+      margin-bottom: 16rem;
+    }
   }
 
   .project-card {

@@ -332,10 +332,22 @@ a.button:hover {
   place-items: center;
   gap: 2.4rem;
 }
+.project-type-cards:not(.home) {
+  justify-content: space-between;
+  margin-bottom: 9.6rem;
+}
+@media screen and (min-width: 768px) {
+  .project-type-cards:not(.home) {
+    margin-bottom: 12rem;
+  }
+}
 @media screen and (min-width: 1111px) {
   .project-type-cards {
     padding: 0rem 0;
     grid-template-columns: 54.1rem 54.1rem;
+  }
+  .project-type-cards:not(.home) {
+    margin-bottom: 16rem;
   }
 }
 .project-type-cards .project-card {
@@ -629,6 +641,158 @@ footer section.footer-banner .footer-banner-overlay {
 }
 .footer-content .footer-content-container .contact-us-footer .social-media-connect a svg :hover {
   fill: var(--light-peach);
+}
+
+section.project-card-banner {
+  max-width: 100%;
+  height: 32rem;
+  background: var(--peach);
+  border-radius: 1.4rem;
+  margin-bottom: 9.5rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+section.project-card-banner .project-card-banner-info {
+  text-align: center;
+  color: var(--white);
+  padding: 0 2.5rem;
+}
+section.project-card-banner .project-card-banner-info h1 {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  margin-bottom: 3.6rem;
+}
+section.project-card-banner .project-card-banner-info p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  section.project-card-banner {
+    height: 25.2rem;
+    margin-bottom: 12rem;
+  }
+  section.project-card-banner .project-card-banner-info {
+    width: 100%;
+  }
+  section.project-card-banner .project-card-banner-info h1 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+  section.project-card-banner .project-card-banner-info p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.project-card-banner {
+    max-width: 111.1rem;
+    height: 25.2rem;
+    margin-bottom: 16rem;
+  }
+  section.project-card-banner .project-card-banner-info p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+
+section.portfolio-project-cards {
+  display: grid;
+  grid-template-columns: 1fr 32.7rem 1fr;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  row-gap: 4rem;
+  margin-bottom: 9.6rem;
+}
+section.portfolio-project-cards .portfolio-card {
+  grid-column: 2/3;
+  height: 47.8rem;
+}
+section.portfolio-project-cards .portfolio-card img {
+  width: 32.7rem;
+  height: 32rem;
+  border-radius: 1.4rem 1.4rem 0 0;
+}
+section.portfolio-project-cards .portfolio-info {
+  text-align: center;
+  background: rgba(255, 172, 153, 0.19);
+  height: 15.8rem;
+  border-radius: 0 0 1.4rem 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background 250ms;
+}
+section.portfolio-project-cards .portfolio-info h2 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.5rem;
+  color: var(--peach);
+  transition: color 250ms;
+}
+section.portfolio-project-cards .portfolio-info p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--dark-grey);
+}
+section.portfolio-project-cards .portfolio-info:hover {
+  background: var(--peach);
+  cursor: pointer;
+}
+section.portfolio-project-cards .portfolio-info:hover h2 {
+  color: var(--white);
+}
+section.portfolio-project-cards .portfolio-info:hover p {
+  color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  section.portfolio-project-cards {
+    grid-template-columns: 1fr 68.9rem 1fr;
+    row-gap: 3.2rem;
+    margin-bottom: 12rem;
+  }
+  section.portfolio-project-cards .portfolio-card {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 34.45rem 34.45rem;
+    height: 31rem;
+  }
+  section.portfolio-project-cards .portfolio-card img {
+    width: 34.45rem;
+    height: 31rem;
+    grid-column: 1/2;
+    border-radius: 1.4rem 0 0 1.4rem;
+  }
+  section.portfolio-project-cards .portfolio-card .portfolio-info {
+    grid-column: 2/3;
+    width: 34.45rem;
+    height: 31rem;
+    border-radius: 0 1.4rem 1.4rem 0;
+  }
+}
+@media screen and (min-width: 1111px) {
+  section.portfolio-project-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3.2rem;
+    column-gap: 3rem;
+  }
+  section.portfolio-project-cards .portfolio-card {
+    grid-column: unset;
+    grid-template-columns: 1fr;
+    height: 47.8rem;
+  }
+  section.portfolio-project-cards .portfolio-card img {
+    grid-column: unset;
+    width: 35rem;
+    height: 32rem;
+    border-radius: 1.4rem 1.4rem 0 0;
+  }
+  section.portfolio-project-cards .portfolio-card .portfolio-info {
+    grid-column: unset;
+    width: 35rem;
+    height: 15.9rem;
+    border-radius: 0 0 1.4rem 1.4rem;
+  }
 }
 
 .home-hero-card {
