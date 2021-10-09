@@ -13,6 +13,8 @@
   margin-bottom: clamp(12rem, 9.962rem + 5.4348vw, 16rem);
   overflow: hidden;
   border-radius: 1.4rem;
+  background-image: url(/assets/home/desktop/bg-pattern-hero-home.svg);
+  background-repeat: no-repeat;
 
   @include breakpoint(desktop) {
     flex-direction: row;

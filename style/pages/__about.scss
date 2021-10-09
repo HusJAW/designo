@@ -13,7 +13,8 @@ section.about-hero-card {
   background: var(--peach);
   overflow: hidden;
   border-radius: 1.4rem;
-
+  background-image: url(/assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+  background-repeat: no-repeat;
   .hero-card-info {
     padding: 8.5rem 3.7rem;
 
@@ -65,6 +66,8 @@ section.talent-hero-card {
   border-radius: 1.4rem;
   overflow: hidden;
   margin-bottom: 12rem;
+  background-image: url(/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg);
+  background-repeat: no-repeat;
 
   .talent-hero-card-info {
     text-align: center;

@@ -539,6 +539,8 @@ footer section.footer-banner .footer-banner-content {
   justify-content: space-between;
   align-items: center;
   padding: 6.4rem 2.8rem;
+  background-image: url(/assets/shared/desktop/bg-pattern-call-to-action.svg);
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
   footer section.footer-banner .footer-banner-content {
@@ -751,6 +753,24 @@ section.project-card-banner .project-card-banner-info p {
   }
 }
 
+section.project-card-banner.graphic {
+  background-image: url(/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.project-card-banner.app {
+  background-image: url(/assets/app-design/desktop/bg-pattern-intro-app.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.project-card-banner.web {
+  background-image: url(/assets/web-design/desktop/bg-pattern-intro-web.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 section.portfolio-project-cards {
   display: grid;
   grid-template-columns: 1fr 32.7rem 1fr;
@@ -861,6 +881,8 @@ section.portfolio-project-cards .portfolio-info:hover p {
   margin-bottom: clamp(12rem, 9.962rem + 5.4348vw, 16rem);
   overflow: hidden;
   border-radius: 1.4rem;
+  background-image: url(/assets/home/desktop/bg-pattern-hero-home.svg);
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 1111px) {
   .home-hero-card {
@@ -1034,6 +1056,8 @@ section.about-hero-card {
   background: var(--peach);
   overflow: hidden;
   border-radius: 1.4rem;
+  background-image: url(/assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+  background-repeat: no-repeat;
 }
 section.about-hero-card .hero-card-info {
   padding: 8.5rem 3.7rem;
@@ -1088,6 +1112,8 @@ section.talent-hero-card {
   border-radius: 1.4rem;
   overflow: hidden;
   margin-bottom: 12rem;
+  background-image: url(/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg);
+  background-repeat: no-repeat;
 }
 section.talent-hero-card .talent-hero-card-info {
   text-align: center;
@@ -1143,6 +1169,8 @@ section.talent-hero-card .talent-hero-card-info p {
 
 section.map-location-container {
   margin-bottom: 4rem;
+  background-image: url(/assets/shared/desktop/bg-pattern-two-circles.svg);
+  background-repeat: no-repeat;
 }
 section.map-location-container iframe {
   width: 37.5rem;
@@ -1246,6 +1274,7 @@ section.contact-us-hero-card {
   gap: 5.8rem;
   margin-bottom: 12rem;
   padding: 7.8rem 2.4rem 7.2rem 2.4rem;
+  background-image: url(/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
 }
 section.contact-us-hero-card .contact-us-info-container {
   text-align: center;
@@ -1272,7 +1301,7 @@ section.contact-us-hero-card form input {
   display: block;
   border: none;
   border-bottom: 1px solid var(--white);
-  background: var(--peach);
+  background: transparent;
   padding-left: 1.6rem;
   padding-bottom: 1.9rem;
   font-size: 1.5rem;
@@ -1280,6 +1309,7 @@ section.contact-us-hero-card form input {
   width: 100%;
   margin-bottom: 3.1rem;
   outline: none;
+  color: var(--white);
 }
 section.contact-us-hero-card form input:hover {
   border-bottom: 3px solid var(--white);
@@ -1292,6 +1322,8 @@ section.contact-us-hero-card form .message {
   section.contact-us-hero-card {
     max-width: 68.9rem;
     padding: 7.8rem 5.8rem 7.2rem 5.8rem;
+    background-image: url(/assets/contact/desktop/bg-pattern-hero-desktop.svg);
+    background-repeat: no-repeat;
   }
   section.contact-us-hero-card .contact-us-info-container {
     text-align: left;

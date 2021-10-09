@@ -21,6 +21,8 @@ footer {
       justify-content: space-between;
       align-items: center;
       padding: 6.4rem 2.8rem;
+      background-image: url(/assets/shared/desktop/bg-pattern-call-to-action.svg);
+      background-repeat: no-repeat;
       // margin: 1rem;
       @include breakpoint(tablet) {
         padding: 5.7rem 5.85rem;

@@ -61,3 +61,21 @@ section.project-card-banner {
     }
   }
 }
+
+section.project-card-banner.graphic {
+  background-image: url(/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.project-card-banner.app {
+  background-image: url(/assets/app-design/desktop/bg-pattern-intro-app.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.project-card-banner.web {
+  background-image: url(/assets/web-design/desktop/bg-pattern-intro-web.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

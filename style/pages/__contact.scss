@@ -10,6 +10,7 @@ section.contact-us-hero-card {
   gap: 5.8rem;
   margin-bottom: 12rem;
   padding: 7.8rem 2.4rem 7.2rem 2.4rem;
+  background-image: url(/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
   .contact-us-info-container {
     text-align: center;
     h1 {
@@ -35,7 +36,7 @@ section.contact-us-hero-card {
       display: block;
       border: none;
       border-bottom: 1px solid var(--white);
-      background: var(--peach);
+      background: transparent;
       padding-left: 1.6rem;
       padding-bottom: 1.9rem;
       font-size: 1.5rem;
@@ -43,6 +44,7 @@ section.contact-us-hero-card {
       width: 100%;
       margin-bottom: 3.1rem;
       outline: none;
+      color: var(--white);
 
       &:hover {
         border-bottom: 3px solid var(--white);
@@ -56,6 +58,9 @@ section.contact-us-hero-card {
   @include breakpoint(tablet) {
     max-width: 68.9rem;
     padding: 7.8rem 5.8rem 7.2rem 5.8rem;
+    background-image: url(/assets/contact/desktop/bg-pattern-hero-desktop.svg);
+    background-repeat: no-repeat;
+
     .contact-us-info-container {
       text-align: left;
       h1 {
