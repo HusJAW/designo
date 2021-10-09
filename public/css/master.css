@@ -140,6 +140,7 @@ table {
   --black: #1d1c1e;
   --white: #ffffff;
   --light-peach: #ffad9b;
+  --light-peach-19: rgba(255, 172, 153, 0.19);
   --dark-grey: #333136;
   --light-grey: #f1f3f5;
 }
@@ -465,6 +466,60 @@ a.button:hover {
   border-radius: 1.4rem;
 }
 
+main.about section.location-cards-hero-container {
+  grid-column: 2/3;
+}
+
+section.location-cards-hero-container {
+  height: 118.8rem;
+  margin-bottom: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+section.location-cards-hero-container .location-card-container {
+  width: 35rem;
+  height: 36.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+section.location-cards-hero-container .location-card-container h2 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  section.location-cards-hero-container {
+    height: 123rem;
+  }
+}
+@media screen and (min-width: 1111px) {
+  section.location-cards-hero-container {
+    height: 36.4rem;
+    width: 111.1rem;
+    flex-direction: row;
+    margin-bottom: 16rem;
+  }
+}
+
+.location-card-container:nth-child(2) img {
+  background: url(/assets/home/desktop/bg-pattern-hero-home-passion.svg);
+  background-size: cover;
+}
+
+.location-card-container:nth-child(3) img {
+  background: url(/assets/home/desktop/bg-pattern-hero-home-RESOURCEFUL.svg);
+  background-size: cover;
+}
+
+.location-card-container:nth-child(1) img {
+  background: url(/assets/home/desktop/bg-pattern-hero-home.svg);
+  background-size: cover;
+}
+
 footer {
   grid-column: 1/4;
 }
@@ -714,7 +769,7 @@ section.portfolio-project-cards .portfolio-card img {
 }
 section.portfolio-project-cards .portfolio-info {
   text-align: center;
-  background: rgba(255, 172, 153, 0.19);
+  background: var(--light-peach-19);
   height: 15.8rem;
   border-radius: 0 0 1.4rem 1.4rem;
   display: flex;
@@ -965,6 +1020,335 @@ section.portfolio-project-cards .portfolio-info:hover p {
 .virtue-cards__container:nth-child(3) .virtue-cards__container__img img {
   background: url(/assets/home/desktop/bg-pattern-hero-home.svg);
   background-size: cover;
+}
+
+main.about {
+  display: grid;
+  grid-template-columns: 1fr minmax(37.5rem, 111.1rem) 1fr;
+  place-items: center;
+}
+
+section.about-hero-card {
+  grid-column: 2/3;
+  max-width: 37.5rem;
+  background: var(--peach);
+  overflow: hidden;
+  border-radius: 1.4rem;
+}
+section.about-hero-card .hero-card-info {
+  padding: 8.5rem 3.7rem;
+  text-align: center;
+  color: var(--white);
+}
+section.about-hero-card .hero-card-info h1 {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  margin-bottom: 3.8rem;
+}
+section.about-hero-card .hero-card-info p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  section.about-hero-card {
+    max-width: 68.9rem;
+  }
+  section.about-hero-card .hero-card-info {
+    padding: 6.7rem;
+    margin-bottom: 12rem;
+  }
+  section.about-hero-card .hero-card-info h1 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    margin-bottom: 4.8rem;
+  }
+  section.about-hero-card .hero-card-info p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+@media screen and (min-width: 1111px) {
+  section.about-hero-card {
+    margin-bottom: 16rem;
+    max-width: 111.1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    max-height: 48rem;
+  }
+  section.about-hero-card .hero-card-info {
+    text-align: left;
+    padding: 14.2rem 8.2rem 14.2rem 9.5rem;
+  }
+}
+
+section.talent-hero-card {
+  grid-column: 2/3;
+  max-width: 37.5rem;
+  background: var(--light-peach-19);
+  border-radius: 1.4rem;
+  overflow: hidden;
+  margin-bottom: 12rem;
+}
+section.talent-hero-card .talent-hero-card-info {
+  text-align: center;
+  padding: 8rem 2.4rem;
+}
+section.talent-hero-card .talent-hero-card-info h2 {
+  color: var(--peach);
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  margin-bottom: 3.8rem;
+}
+section.talent-hero-card .talent-hero-card-info p {
+  color: var(--dark-grey);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 3.4rem;
+}
+@media screen and (min-width: 768px) {
+  section.talent-hero-card {
+    max-width: 68.9rem;
+  }
+  section.talent-hero-card .talent-hero-card-info {
+    padding: 6.7rem 5.75rem;
+  }
+  section.talent-hero-card .talent-hero-card-info h2 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    margin-bottom: 4rem;
+  }
+  section.talent-hero-card .talent-hero-card-info p {
+    font: 1.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 3.8rem;
+  }
+}
+@media screen and (min-width: 1111px) {
+  section.talent-hero-card {
+    max-width: 111.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 64rem;
+    margin-bottom: 16rem;
+  }
+  section.talent-hero-card:nth-child(4) {
+    flex-direction: row-reverse;
+  }
+  section.talent-hero-card .talent-hero-card-info {
+    text-align: left;
+    padding: 15.3rem 9.5rem;
+  }
+}
+
+section.map-location-container {
+  margin-bottom: 4rem;
+}
+section.map-location-container iframe {
+  width: 37.5rem;
+  height: 32rem;
+}
+section.map-location-container .location-map-info {
+  background: var(--light-peach-19);
+  text-align: center;
+  padding: 8.4rem;
+  width: 37.5rem;
+}
+section.map-location-container .location-map-info h2 {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  color: var(--peach);
+  margin-bottom: 3.7rem;
+}
+section.map-location-container .location-map-info .adress-contact-container {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+section.map-location-container .location-map-info .adress-contact-container h3 {
+  font-weight: bold;
+}
+section.map-location-container .location-map-info .adress-contact-container .adress-info {
+  margin-bottom: 3.5rem;
+}
+section.map-location-container:nth-child(3) {
+  margin-bottom: 12rem;
+}
+@media screen and (min-width: 768px) {
+  section.map-location-container {
+    max-width: 68.9rem;
+    margin-bottom: 12rem;
+  }
+  section.map-location-container iframe {
+    width: 68.9rem;
+    height: 32.6rem;
+    border-radius: 1.4rem;
+    margin-bottom: 3.1rem;
+  }
+  section.map-location-container .location-map-info {
+    text-align: left;
+    padding: 9.4rem 16.5rem 9.1rem 7.6rem;
+    height: 32.6rem;
+    border-radius: 1.4rem;
+  }
+  section.map-location-container .location-map-info h2 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    margin-bottom: 4rem;
+  }
+  section.map-location-container .location-map-info .adress-contact-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+  section.map-location-container .location-map-info .adress-contact-container .adress-info {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1111px) {
+  section.map-location-container {
+    max-width: 111.1rem;
+    max-height: 32.6rem;
+    display: flex;
+    gap: 4rem;
+    flex-direction: row-reverse;
+    margin-bottom: 3.2rem;
+  }
+  section.map-location-container iframe {
+    width: 35rem;
+    height: 32.6rem;
+    margin-bottom: 0;
+  }
+  section.map-location-container .location-map-info {
+    text-align: left;
+    padding: 9.4rem 18.6rem 9.1rem 9.5rem;
+    width: 73rem;
+  }
+  section.map-location-container .location-map-info h2 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    margin-bottom: 4rem;
+  }
+}
+section.map-location-container:nth-child(2) {
+  flex-direction: row;
+}
+section.map-location-container:nth-child(3) {
+  margin-bottom: 16rem;
+}
+
+section.contact-us-hero-card {
+  background: var(--peach);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 5.8rem;
+  margin-bottom: 12rem;
+  padding: 7.8rem 2.4rem 7.2rem 2.4rem;
+}
+section.contact-us-hero-card .contact-us-info-container {
+  text-align: center;
+}
+section.contact-us-hero-card .contact-us-info-container h1 {
+  color: var(--white);
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  margin-bottom: 3.5rem;
+}
+section.contact-us-hero-card .contact-us-info-container p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--light-grey);
+}
+section.contact-us-hero-card form {
+  width: 32.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section.contact-us-hero-card form input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  background: var(--peach);
+  padding-left: 1.6rem;
+  padding-bottom: 1.9rem;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  width: 100%;
+  margin-bottom: 3.1rem;
+  outline: none;
+}
+section.contact-us-hero-card form input:hover {
+  border-bottom: 3px solid var(--white);
+}
+section.contact-us-hero-card form .message {
+  padding-bottom: 7.9rem;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  section.contact-us-hero-card {
+    max-width: 68.9rem;
+    padding: 7.8rem 5.8rem 7.2rem 5.8rem;
+  }
+  section.contact-us-hero-card .contact-us-info-container {
+    text-align: left;
+  }
+  section.contact-us-hero-card .contact-us-info-container h1 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    margin-bottom: 4.55rem;
+  }
+  section.contact-us-hero-card .contact-us-info-container p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+  section.contact-us-hero-card form {
+    width: 57.3rem;
+  }
+  section.contact-us-hero-card form .message {
+    margin-bottom: 2.3rem;
+  }
+  section.contact-us-hero-card form a {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1111px) {
+  section.contact-us-hero-card {
+    flex-direction: row;
+    max-width: 111.1rem;
+    margin-bottom: 16rem;
+    padding: 5.4rem 9.5rem;
+    gap: 9.8rem;
+  }
+  section.contact-us-hero-card .contact-us-info-container {
+    max-width: 44.2rem;
+  }
+  section.contact-us-hero-card form {
+    width: 38rem;
+  }
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: var(--light-grey);
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--light-grey);
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: var(--light-grey);
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: var(--light-grey);
 }
 
 /*# sourceMappingURL=master.css.map */
