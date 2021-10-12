@@ -68,7 +68,7 @@
     transform: scale(0, 0);
     transform-origin: top;
     transition: 250ms ease-in-out;
-    // z-index: 1;
+    z-index: 5;
 
     @include breakpoint(tablet) {
       transform: scale(1, 1);
@@ -116,11 +116,13 @@
     transition: 250ms ease-in-out;
     position: fixed;
     // position: absolute;
-    top: 0px;
-    width: calc(100vh - 18.2rem); // needs fixing also checck HTML
-    height: calc(100vh - 6.3rem);
-    left: -15%;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 9.5rem;
+    // width: calc(100vh - 18.2rem); // needs fixing also checck HTML
+    // height: calc(100vh - 6.3rem);
+    left: 0;
+    z-index: 1;
     background: var(--dark-grey);
     opacity: 0.5;
     @include breakpoint(tablet) {
