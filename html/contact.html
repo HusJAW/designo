@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/public/css/master.css" />
     <script type="module" src="/script/script.js"></script>
-    <title>locations</title>
+    <title>contact</title>
   </head>
   <body>
     <header class="nav-bar-header">
       <div class="logo-container">
-        <img src="/assets/shared/desktop/logo-dark.png" alt="designoa logo" />
+        <a href="/index.html">
+          <img src="/assets/shared/desktop/logo-dark.png" alt="designoa logo" />
+        </a>
       </div>
 
       <div class="hamburger-lines-container">
@@ -21,9 +23,9 @@
       </div>
 
       <nav class="page-navigation">
-        <a href="#">OUR COMPANY</a>
-        <a href="#">LOCATION</a>
-        <a href="#">CONTACT</a>
+        <a href="../html/about.html">OUR COMPANY</a>
+        <a href="../html/locations.html">LOCATION</a>
+        <a href="../html/contact.html">CONTACT</a>
         <div class="overlay"></div>
       </nav>
     </header>
@@ -39,17 +41,33 @@
           </p>
         </div>
 
-        <form action="submit">
-          <input type="text" required class="name" placeholder="Name" />
-          <input
-            type="email"
-            class="email"
-            placeholder="Email Address"
-            required
-          />
+        <form>
+          <input type="text" class="name" placeholder="Name" />
+          <div class="alert">
+            can't be empty
+            <img src="/assets/contact/desktop/icon-error.svg" alt="" />
+          </div>
+          <!-- ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff -->
+          <input type="email" class="email" placeholder="Email Address" />
+          <div class="alert">
+            can't be empty
+            <img src="/assets/contact/desktop/icon-error.svg" alt="" />
+          </div>
+          <!-- ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff -->
           <input type="tel" class="phone" placeholder="Phone" />
+          <div class="alert">
+            can't be empty
+            <img src="/assets/contact/desktop/icon-error.svg" alt="" />
+          </div>
+          <!-- ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff -->
           <input type="text" placeholder="Your Message" class="message" />
-          <a href="" class="button submit-form dark">submit</a>
+          <div class="alert">
+            can't be empty
+            <img src="/assets/contact/desktop/icon-error.svg" alt="" />
+          </div>
+          <!-- ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff -->
+
+          <button class="submit-form">submit</button>
         </form>
       </section>
 
@@ -60,7 +78,9 @@
             alt="location canda australia united kingdom"
           />
           <h2>CANADA</h2>
-          <a href="" class="button secoundery light">see location</a>
+          <a href="../html/locations.html" class="button secoundery light"
+            >see location</a
+          >
         </div>
         <div class="location-card-container">
           <img
@@ -68,7 +88,9 @@
             alt="location canda australia united kingdom"
           />
           <h2>AUSTRALIA</h2>
-          <a href="" class="button secoundery light">see location</a>
+          <a href="../html/locations.html" class="button secoundery light"
+            >see location</a
+          >
         </div>
         <div class="location-card-container">
           <img
@@ -76,7 +98,9 @@
             alt="location canda australia united kingdom"
           />
           <h2>UNITED KINGDOM</h2>
-          <a href="" class="button secoundery light">see location</a>
+          <a href="../html/locations.html" class="button secoundery light"
+            >see location</a
+          >
         </div>
       </section>
     </main>
@@ -86,15 +110,17 @@
         <div class="footer-content-container">
           <nav class="footer-navigation-container">
             <div class="footer-logo-container">
-              <img
-                src="/assets/shared/desktop/logo-light.png"
-                alt="Designo logo"
-              />
+              <a href="/index.html">
+                <img
+                  src="/assets/shared/desktop/logo-light.png"
+                  alt="designoa logo"
+                />
+              </a>
             </div>
             <div class="navgation">
-              <a href="#">OUR COMPANY</a>
-              <a href="#">LOCATION</a>
-              <a href="#">CONTACT</a>
+              <a href="../html/about.html">OUR COMPANY</a>
+              <a href="../html/locations.html">LOCATION</a>
+              <a href="../html/contact.html">CONTACT</a>
             </div>
           </nav>
           <div class="contact-us-footer">

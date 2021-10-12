@@ -7,7 +7,10 @@ footer {
 
   section.footer-banner {
     display: grid;
-    grid-template-columns: 1fr minmax(32.7rem, 111.1rem) 1fr;
+    grid-template-columns: minmax(2.4rem, 1fr) minmax(32.7rem, 111.1rem) minmax(
+        2.4rem,
+        1fr
+      );
     grid-template-rows: 19rem 18.9rem;
 
     .footer-banner-content {
@@ -26,6 +29,10 @@ footer {
       // margin: 1rem;
       @include breakpoint(tablet) {
         padding: 5.7rem 5.85rem;
+        grid-template-columns: minmax(4rem, 1fr) minmax(32.7rem, 111.1rem) minmax(
+            4rem,
+            1fr
+          );
       }
       @include breakpoint(desktop) {
         padding: 7.4rem 9.6rem;

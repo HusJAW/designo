@@ -32,6 +32,8 @@ section.contact-us-hero-card {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    ///////////////////////////////////////////////////
     input {
       display: block;
       border: none;
@@ -78,7 +80,7 @@ section.contact-us-hero-card {
       .message {
         margin-bottom: 2.3rem;
       }
-      a {
+      button {
         margin-left: auto;
       }
     }
@@ -114,4 +116,32 @@ section.contact-us-hero-card {
 :-moz-placeholder {
   /* Firefox 18- */
   color: var(--light-grey);
+}
+
+.alert {
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  color: var(--white);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 2.6rem;
+  display: none;
+
+  &:nth-of-type(2) {
+    top: 8rem;
+  }
+  &:nth-of-type(3) {
+    top: 16rem;
+  }
+  &:nth-of-type(4) {
+    top: 24.5rem;
+  }
+}
+
+.alert-on {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
 }

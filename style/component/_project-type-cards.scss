@@ -33,6 +33,7 @@
   }
 
   .project-card {
+    text-decoration: none;
     width: 32.7rem;
     height: 25rem;
     border-radius: 1.4rem;
@@ -47,6 +48,7 @@
       line-height: 3.6rem;
       letter-spacing: 0.14rem;
       z-index: 1;
+      margin-bottom: 3.9rem;
       @include breakpoint(tablet) {
         font-size: 4rem;
         line-height: 4.8rem;

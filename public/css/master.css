@@ -147,7 +147,6 @@ table {
 
 body {
   font-family: "Jost", sans-serif;
-  background: var(--dark-grey);
   min-width: 37.5rem;
   display: grid;
   grid-template-columns: 1fr minmax(32.7rem, 111.1rem) 1fr;
@@ -306,10 +305,6 @@ a.button.secoundery {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
 }
-a.button.submit-form {
-  padding-left: 4.75rem;
-  padding-right: 4.75rem;
-}
 a.button.contact {
   padding-left: 1.85rem;
   padding-right: 1.85rem;
@@ -323,6 +318,24 @@ a.button.dark {
   color: var(--black);
 }
 a.button:hover {
+  background: var(--light-peach);
+  color: var(--white);
+}
+
+button.submit-form {
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1.75rem 4.75rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  background: var(--white);
+  color: var(--black);
+}
+button.submit-form:hover {
   background: var(--light-peach);
   color: var(--white);
 }
@@ -352,6 +365,7 @@ a.button:hover {
   }
 }
 .project-type-cards .project-card {
+  text-decoration: none;
   width: 32.7rem;
   height: 25rem;
   border-radius: 1.4rem;
@@ -367,6 +381,7 @@ a.button:hover {
   line-height: 3.6rem;
   letter-spacing: 0.14rem;
   z-index: 1;
+  margin-bottom: 3.9rem;
 }
 @media screen and (min-width: 768px) {
   .project-type-cards .project-card h2 {
@@ -525,7 +540,7 @@ footer {
 }
 footer section.footer-banner {
   display: grid;
-  grid-template-columns: 1fr minmax(32.7rem, 111.1rem) 1fr;
+  grid-template-columns: minmax(2.4rem, 1fr) minmax(32.7rem, 111.1rem) minmax(2.4rem, 1fr);
   grid-template-rows: 19rem 18.9rem;
 }
 footer section.footer-banner .footer-banner-content {
@@ -545,6 +560,7 @@ footer section.footer-banner .footer-banner-content {
 @media screen and (min-width: 768px) {
   footer section.footer-banner .footer-banner-content {
     padding: 5.7rem 5.85rem;
+    grid-template-columns: minmax(4rem, 1fr) minmax(32.7rem, 111.1rem) minmax(4rem, 1fr);
   }
 }
 @media screen and (min-width: 1111px) {
@@ -1296,6 +1312,7 @@ section.contact-us-hero-card form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 section.contact-us-hero-card form input {
   display: block;
@@ -1343,7 +1360,7 @@ section.contact-us-hero-card form .message {
   section.contact-us-hero-card form .message {
     margin-bottom: 2.3rem;
   }
-  section.contact-us-hero-card form a {
+  section.contact-us-hero-card form button {
     margin-left: auto;
   }
 }
@@ -1381,6 +1398,33 @@ section.contact-us-hero-card form .message {
 :-moz-placeholder {
   /* Firefox 18- */
   color: var(--light-grey);
+}
+
+.alert {
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  color: var(--white);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 2.6rem;
+  display: none;
+}
+.alert:nth-of-type(2) {
+  top: 8rem;
+}
+.alert:nth-of-type(3) {
+  top: 16rem;
+}
+.alert:nth-of-type(4) {
+  top: 24.5rem;
+}
+
+.alert-on {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
 /*# sourceMappingURL=master.css.map */
