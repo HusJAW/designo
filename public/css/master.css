@@ -1400,6 +1400,13 @@ section.contact-us-hero-card form .message {
   color: var(--light-grey);
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+  -webkit-text-fill-color: var(--white);
+  -webkit-box-shadow: 0 0 0 1000px var(--peach) inset;
+}
+
 .alert {
   position: absolute;
   top: 0.5rem;
