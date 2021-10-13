@@ -75,6 +75,8 @@
   padding: 12rem 2.4rem;
   //   width: 32.7rem;
   //   margin: 0 auto;
+  display: grid;
+  place-items: center;
   max-width: 111rem;
   @include breakpoint(tablet) {
     // width: 69rem;

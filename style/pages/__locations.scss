@@ -4,8 +4,7 @@
 section.map-location-container {
   margin-bottom: 4rem;
   //   max-width: 37.5;
-  background-image: url(/assets/shared/desktop/bg-pattern-two-circles.svg);
-  background-repeat: no-repeat;
+
   iframe {
     width: 37.5rem;
     height: 32rem;
@@ -15,6 +14,8 @@ section.map-location-container {
     text-align: center;
     padding: 8.4rem;
     width: 37.5rem;
+    background-image: url(/assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-repeat: no-repeat;
 
     h2 {
       font-size: 3.2rem;
@@ -43,7 +44,8 @@ section.map-location-container {
     margin-bottom: 12rem;
 
     iframe {
-      width: 68.9rem;
+      // width: 68.9rem;
+      width: 73rem;
       height: 32.6rem;
       border-radius: 1.4rem;
       margin-bottom: 3.1rem;
@@ -53,6 +55,7 @@ section.map-location-container {
       padding: 9.4rem 16.5rem 9.1rem 7.6rem;
       height: 32.6rem;
       border-radius: 1.4rem;
+      width: 73rem;
       h2 {
         font-size: 4rem;
         line-height: 4.8rem;
